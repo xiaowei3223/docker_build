@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>shiny-server</title>
+	</head>
+	<style>
+		a{text-decoration: none;}
+	</style>
+	<body>
+		<div style="background-color:#F0FFFF;max-width:80%; margin:auto">
+			<div style="padding: 16px 32px; ">
+				<h1 style="text-align:center;">Welcome to shiny-server built by Mora-Lab</h1>
+				<p><a href="https://hub.docker.com/r/moralab/shiny-server" >This shiny-server</a> includes two parts.</p>
+				<ul>
+					<li>1. Shiny-server: to run one or more of your shinyApp automatically.</li>
+					<li>2. RStudio-server: to edit the shinyApps or install R packages for running the shinyApps.</li>			
+				</ul>
+
+				<p>As we designed, you can use account `rstudio` with password rstudio to log in the RStudio-server. </p>	
+				<p>If you want add your shinyApp, you just put your shinyApp to `/home/rstudio/shinyApps` folder in the container.</p>	
+				<p>After installed R packages for the shinyApp with rstudio account, you can view your shinyApp on the website <a href="#">http://host_ip:3838/your_shinyApp</a>.</p>	
+				<p>Here has an <a href="sampleApp">sampleApp</a> for you.</p>
+			</div>
+		</div>
+	</body>
+</html>
