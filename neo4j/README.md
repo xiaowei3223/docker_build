@@ -57,3 +57,9 @@ dbms.active_database=mydata.db
 保存后，退出编辑模式。
 最后，使用`exit`退出容器后，重启neo4j容器即可。
 
+## 创建这个镜像
+```shell
+git clone https://github.com/xiaowei3223/docker_build.git
+cd docker_build/neo4j
+sudo docker build -t moralab/shiny-server:neo4j-3.5.4:latest .
+```
