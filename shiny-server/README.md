@@ -12,7 +12,7 @@
 
 ```shell
 sudo docker run -d \
-    --publish=3838:3838 
+    --publish=3838:3838 \
     --name shiny\
     moralab/shiny-server
 ```
@@ -41,7 +41,7 @@ sudo docker run -d \
     --publish=3838:3838 \
     --publish=8787:8787 \
     --volume=`pwd`:/home/rstudio/shinyApps \
-    --name shiny\
+    --name shiny \
     moralab/shiny-server
 ```
 
