@@ -19,7 +19,6 @@ docker run -d \
      --publish=3838:3838 \
      --publish=8787:8787 \
      --volume=`pwd`/neo4j:/home/neo4j/data \
-     --volume=`pwd`/shinyApp:/home/shiny/shinyApp \
     --name copd-shiny \
     moralab/copd-shiny
 ```
@@ -28,8 +27,7 @@ docker run -d \
 - ` --publish=7474:7474 --publish=7687:7687` 是用来访问neo4j的。
 - `--publish=3838:3838`是用来访问shinyApp的。
 - `--publish=8787:8787`是用来访问RStudio-server的。
-- `--volume=`pwd`/neo4j:/home/neo4j/data` 将当前目录下的neo4j文件夹与容器内的`/home/neo4j/data`绑定在一起，以方便更换neo4j数据库。
-- `--volume=`pwd`/shinyApp:/home/shiny/shinyApp`将当前目录下的`shinyApp`与容器内的`/home/shiny/shinyApp`绑定在一起，以方便添加shinyApp。
+- `--volume` 将当前目录下的neo4j文件夹与容器内的`/home/neo4j/data`绑定在一起，以方便更换neo4j数据库。
 - `--name copd-shiny` 是将这个镜像运行的容器命名为`copd-shiny`,以便我们对其进行操作。
 - ` moralab/copd-shiny`是这个镜像名称。
 
@@ -39,5 +37,5 @@ docker run -d \
 
 如果您想要使用RStudio,可以访问http://localhost:8787，登录的账户和密码是`rstudio`。
 
-
+该shiny应用程序存放在`/home/rstudio/shinyApps`。
 
