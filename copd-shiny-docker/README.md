@@ -4,7 +4,7 @@
 
 该镜像依赖于自建的shiny-server的镜像。
 
-该镜像包含了neo4j、shiny-server、rstudio-server这三个软件。其中，neo4j是用来运行这个shinyApp所需要的`Time-Course-COPD-Database`，而shiny-server则包含了https://github.com/mora-lab/TC-DATABASE_shiny的shinyApp文件。为了方便能够使用到R，rstudio-server便也安装在这个镜像中了。
+该镜像包含了neo4j、shiny-server、rstudio-server这三个软件。其中，neo4j是用来运行这个shinyApp所需要的`Time-Course-COPD-Database`，而shiny-server则包含了https://github.com/mora-lab/TC-DATABASE_shiny 的shinyApp文件。为了方便能够使用到R，rstudio-server便也安装在这个镜像中了。
 
 
 
@@ -39,3 +39,9 @@ docker run -d \
 
 该shiny应用程序存放在`/home/rstudio/shinyApps`。
 
+## 创建这个镜像
+```shell
+git clone https://github.com/xiaowei3223/docker_build.git
+cd docker_build/copd-shiny-docker
+sudo docker build -t moralab/copd-shiny:latest .
+```
