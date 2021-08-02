@@ -62,5 +62,10 @@ sudo docker run -d \
 docker exec -it shiny bash
 ```
 
-
+## 创建这个镜像
+```shell
+git clone https://github.com/xiaowei3223/docker_build.git
+cd docker_build/shiny-server
+sudo docker build -t moralab/shiny-server:latest .
+```
 
