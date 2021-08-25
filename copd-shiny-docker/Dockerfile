@@ -49,8 +49,10 @@ RUN mkdir /home/neo4j/data/databases/copd-db
 COPY copd-db /home/neo4j/data/databases/copd-db/
 
 #将TC-shiny拷贝进去----------------------------------------------------------------------------------
-RUN rm -rf /home/rstudio/shinyApps/*
-COPY copd_shiny /home/rstudio/shinyApps/
+# RUN rm -rf /home/rstudio/shinyApps/*
+# COPY copd_shiny /home/rstudio/shinyApps/
+RUN rm -rf /home/rstudio/shinyApps/* 
+COPY copd_shiny /home/rstudio/shinyApps/copd_shiny/
 
 # 将neo4j目录下所有文件的权限修改
 RUN chmod -R 777 /home/neo4j/*
