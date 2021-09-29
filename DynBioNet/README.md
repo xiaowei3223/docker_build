@@ -9,6 +9,7 @@ sudo docker run -d \
     --name dynbionet \
      moralab/dynbionet:latest
 ```
+运行后，然后打开http://localhost:3838/DynBioNet/ 即可查看DynBioNet的shiny App
 
 # 创建docker镜像
 【注意】 在当前文件夹下运行下面的命令
@@ -47,7 +48,7 @@ sudo docker run -d \
     --name dynbionet \
      moralab/dynbionet:latest
 ```	 
-运行后，然后打开http://localhost:3838/DynBioNet/即可查看DynBioNet的shiny App
+运行后，然后打开http://localhost:3838/DynBioNet/ 即可查看DynBioNet的shiny App
 
 ## Step4: 删除dynbionet容器
 ```shell
